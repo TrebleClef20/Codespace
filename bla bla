@@ -1,0 +1,61 @@
+abstract class Character {
+    protected String type;
+
+    public Character(String type) {
+        this.type = type;
+    }
+
+    public abstract void attack();
+
+    public abstract void defend();
+}
+
+class Knight extends Character {
+    public Knight() {
+        super("Knight");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("Knight attacks with a sword!");
+    }
+
+    @Override
+    public void defend() {
+        System.out.println("Using a shield to defend!");
+        System.out.println("Dodging to avoid attacks!");
+        System.out.println("Creating a magic barrier for defense!");
+    }
+}
+
+class Wizard extends Character {
+    public Wizard() {
+        super("Wizard");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("Wizard casts a spell!");
+    }
+
+    @Override
+    public void defend() {
+        System.out.println("Creating a magic barrier for defense!");
+    }
+}
+
+class Archer extends Character {
+    public Archer() {
+        super("Archer");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("Archer shoots an arrow!");
+    }
+
+    @Override
+    public void defend() {
+        System.out.println("Using dodge to defend!");
+    }
+}
