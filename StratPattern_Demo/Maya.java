@@ -1,3 +1,4 @@
+package StratPattern_Demo;
 public class Maya implements PaymentType{
 
     @Override

@@ -1,4 +1,4 @@
-package Old;
+package GodObject_Sample;
 public class Order {
     private Double orderAmount;
     private String paymentType;
